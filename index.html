@@ -393,7 +393,6 @@ async function ai(prompt,retries=3){
         headers:{
           'Content-Type':'application/json',
           'anthropic-dangerous-direct-browser-access':'true'
-          'x-api-key': 'ozXvI0SOCkI0YR4oY7DzoCpZ0r9u4VWo'
         },
         body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:2000,messages:[{role:'user',content:prompt}]})
       });
